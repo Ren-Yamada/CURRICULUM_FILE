@@ -1,24 +1,26 @@
 // Character.java
 package character25;
 
+// キャラクタークラス
 public class Character {
-    private String name;
-    private int hp;
-    private int mp;
-    private int attack;
-    private int agility;
-    private int defense;
+    private String name; // 名前
+    private int hp; // HP
+    private int mp; // MP
+    private int attack; // 攻撃力
+    private int agility; // 素早さ
+    private int defense; // 防御力
 
+    // コンストラクタ
     public Character(String name, int hp, int mp, int attack, int agility, int defense) {
-        this.name = name;
-        this.hp = hp;
-        this.mp = mp;
-        this.attack = attack;
-        this.agility = agility;
-        this.defense = defense;
+        this.name = name; // 名前を設定
+        this.hp = hp; // HPを設定
+        this.mp = mp; // MPを設定
+        this.attack = attack; // 攻撃力を設定
+        this.agility = agility; // 素早さを設定
+        this.defense = defense; // 防御力を設定
     }
 
-    // Getter and setters
+    // 名前のゲッターとセッター
     public String getName() {
         return name;
     }
@@ -27,6 +29,7 @@ public class Character {
         this.name = name;
     }
 
+    // HPのゲッターとセッター
     public int getHp() {
         return hp;
     }
@@ -35,6 +38,7 @@ public class Character {
         this.hp = hp;
     }
 
+    // MPのゲッターとセッター
     public int getMp() {
         return mp;
     }
@@ -43,6 +47,7 @@ public class Character {
         this.mp = mp;
     }
 
+    // 攻撃力のゲッターとセッター
     public int getAttack() {
         return attack;
     }
@@ -51,6 +56,7 @@ public class Character {
         this.attack = attack;
     }
 
+    // 素早さのゲッターとセッター
     public int getAgility() {
         return agility;
     }
@@ -59,6 +65,7 @@ public class Character {
         this.agility = agility;
     }
 
+    // 防御力のゲッターとセッター
     public int getDefense() {
         return defense;
     }
@@ -67,7 +74,7 @@ public class Character {
         this.defense = defense;
     }
 
-    // Display character status
+    // キャラクターのステータスを表示するメソッド
     public void displayStatus() {
         System.out.println("こんにちは " + name + " さん");
         System.out.println("ステータス");

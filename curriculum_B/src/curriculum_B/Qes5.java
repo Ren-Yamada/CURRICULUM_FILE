@@ -5,14 +5,15 @@ public class Qes5 {
         // 九九の表と計算式を表示する
         for (int j = 1; j <= 9; j++) {
             // 各段の掛け算を横に表示
-            for (int i = 1; i <= 9; i++) {
+            for (int i = 1; i <= 20; i++) {
                 // 数字と計算式を 001、002 の形式で表示する
                 String left = String.format("%03d", i);
                 String right = String.format("%03d", j);
                 String result = String.format("%03d", i * j);
-                System.out.print(left + " × " + right + " = " + result + "\t");
+                System.out.print(left + " × " + right + " = " + result );
                 // 各計算結果の後に "||" とスペースを追加
                 if (i != 9) {
+                
                 System.out.print(" || ");
                 }
             }

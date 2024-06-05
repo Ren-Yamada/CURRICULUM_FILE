@@ -10,7 +10,7 @@ public class Curriculum_New_1_18 {
     }
 
     // Q2：引数に整数を渡すと,渡した値同士を乗算しコンソールに出力するメソッドを作成してください
-    public static void multiply(int a, int b) {
+    public static void add(int a, int b) {
         System.out.println(a * b);
     }
 
@@ -21,11 +21,10 @@ public class Curriculum_New_1_18 {
         }
     }
 
- // Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力してください
+    // Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力してください
     public static void add(double a, double b) {
         System.out.println(a + b);
     }
-
 
     // Q5：引数に整数を渡すと、1～100までのランダムな数字を引数の回数分格納して
     // 格納した値を順番にコンソールで出力後、格納した値を返すメソッドを作成してください。
@@ -34,7 +33,7 @@ public class Curriculum_New_1_18 {
         int[] numbers = new int[count];
         Random random = new Random();
         for (int i = 0; i < count; i++) {
-            numbers[i] = random.nextInt(100) + 1; // Generating random numbers between 1 and 100
+            numbers[i] = random.nextInt(100) + 1; // 1～100のランダムな数を生成
             System.out.println(numbers[i]);
         }
         return numbers;
@@ -48,7 +47,7 @@ public class Curriculum_New_1_18 {
             sum += num;
         }
         double average = (double) sum / numbers.length;
-        System.out.println("Average: " + average);
+        System.out.println("平均値: " + average);
     }
 
     // Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
@@ -65,8 +64,8 @@ public class Curriculum_New_1_18 {
 
     public static void main(String[] args) {
         // 作成したメソッドをここで呼び出してください
-        printMessage("Hello", 11);
-        multiply(5, 6);
+        printMessage("こんにちは", 11);
+        add(5, 6);
         int[] array = {1, 2, 3, 4, 5};
         printArray(array);
         add(3.5, 2.5);

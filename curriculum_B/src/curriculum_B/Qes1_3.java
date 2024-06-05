@@ -33,7 +33,7 @@ public class Qes1_3 {
 
         while (true) {
             totalRounds++;
-            System.out.println("\n--- Round " + totalRounds + " ---");
+            System.out.println("\n--- ラウンド " + totalRounds + " ---");
 
             // 自分の手の入力
             System.out.print(username + "の手を選んでください (0: グー, 1: チョキ, 2: パー): ");
@@ -71,7 +71,7 @@ public class Qes1_3 {
         }
 
         System.out.println("勝つまでにかかった合計回数は" + totalRounds + "回です");
-     
+
         // scannerの閉じ処理
         scanner.close();
     }

@@ -11,6 +11,19 @@ public class Qes1_13 {
 	static char charVar = 'a';
 	static String stringVar = "ハロー";
 	static boolean boolVar = true;
+	
+	static {
+        // 各型の初期値を代入
+        byteVar = 10;
+        shortVar = 100;
+        intVar = 1000;
+        longVar = 10000;
+        floatVar = 9.5f;
+        doubleVar = 10.5;
+        charVar = 'a';
+        stringVar = "ハロー";
+        boolVar = true;
+    }
 
 	public static void main(String[] args) {
 		// 初期値をコンソールに出力
@@ -71,7 +84,16 @@ public class Qes1_13 {
 		String favoriteFood = infoArray[4];
 
 		double bmi = weight / ((height / 100) * (height / 100));
-
+		
+		// 変数に再代入
+        name = "鈴木一郎";
+        age = 24;
+        height = 168.5;
+        weight = 64.2;
+        favoriteFood = "オムライス";
+        bmi = 22.6;
+        
+        
 		// 出力フォーマットに基づいてコンソールに出力
 		System.out.printf(
 				"「初めまして%sです」\n"
@@ -82,6 +104,9 @@ public class Qes1_13 {
 						name, age, height, weight, favoriteFood);
 		// BMIも出力
 		System.out.printf("「BMIは%.2fです」\n", bmi);
+		boolean isAge25OrOlder = age >= 25;
+        System.out.println(isAge25OrOlder);
+        
 		// 名前を鈴木一郎に変更
 		name = "鈴木一郎";
 		// 年齢・身長・体重の数値を和算で自己代入

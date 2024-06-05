@@ -1,19 +1,20 @@
 package curriculum_29;
 
+// 都道府県クラス
 public class Prefecture {
-    private int id;
-    private String name;
-    private String city;
-    private int population;
-    private double area;
+    private int id; // ID
+    private String name; // 都道府県名
+    private String city; // 県庁所在地
+    private int population; // 人口
+    private double area; // 面積
 
     // コンストラクター
     public Prefecture(int id, String name, String city, int population, double area) {
-        this.id = id;
-        this.name = name;
-        this.city = city;
-        this.population = population;
-        this.area = area;
+        this.id = id; // IDを設定
+        this.name = name; // 都道府県名を設定
+        this.city = city; // 県庁所在地を設定
+        this.population = population; // 人口を設定
+        this.area = area; // 面積を設定
     }
 
     // IDを取得するメソッド
@@ -44,6 +45,6 @@ public class Prefecture {
     // 文字列形式で都道府県情報を取得するメソッド
     @Override
     public String toString() {
-        return name + ":" + city + ":" + population;
+        return name + ":" + city + ":" + population; // 都道府県名、県庁所在地、人口を返す
     }
 }
