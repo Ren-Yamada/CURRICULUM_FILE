@@ -14,13 +14,13 @@ public class Qes1_13 {
 	
 	static {
         // 各型の初期値を代入
-        byteVar = 10;
-        shortVar = 100;
-        intVar = 1000;
-        longVar = 10000;
-        floatVar = 9.5f;
-        doubleVar = 10.5;
-        charVar = 'a';
+        byteVar = 0;
+        shortVar = 0;
+        intVar = 0;
+        longVar = 0L;
+        floatVar = 0.0f;
+        doubleVar = 0.0;
+        charVar = '\u0000';
         stringVar = "ハロー";
         boolVar = true;
     }
